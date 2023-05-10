@@ -1,85 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body{ 
-    /* font: normal 13px/20px Arial, Helvetica, sans-serif; word-wrap:break-word;
-    color: #eee;
-    background: #353535; */
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
+
 #countdown{
   width: 465px;
   height: 112px;
   text-align: center;
   background: #FFB6C1;
-  /* background-image: -webkit-linear-gradient(top, #222, #333, #333, #222); 
-  background-image:    -moz-linear-gradient(top, #222, #333, #333, #222);
-  background-image:     -ms-linear-gradient(top, #222, #333, #333, #222);
-  background-image:      -o-linear-gradient(top, #222, #333, #333, #222); */
-  /* border: 1px solid #111; */
-  border-radius: 5px;
+  border-radius: 15px;
   margin: auto;
   padding: 24px 0;
   position: relative;
 }
 
-/* #countdown:before{
-  content:"";
-  width: 8px;
-  height: 65px;
-  background: #444;
-  background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
-  background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
-  background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
-  background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
-  border: 1px solid #111;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  display: block;
-  position: absolute;
-  top: 48px; left: -10px;
-}
-
-#countdown:after{
-  content:"";
-  width: 8px;
-  height: 65px;
-  background: #444;
-  background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
-  background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
-  background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
-  background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
-  border: 1px solid #111;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  display: block;
-  position: absolute;
-  top: 48px; right: -10px;
-} */
-
-/* #countdown #tiles{
-  position: relative;
-  z-index: 1;
-} */
-
 #countdown #tiles > span{
   width: 92px;
-  max-width: 92px;
+  width: 92px;
   font: bold 48px 'Droid Sans', Arial, sans-serif;
   text-align: center;
   color: #111;
   background-color: whitesmoke;
-  /* background-image: -webkit-linear-gradient(top, #bbb, #eee);  */
-  /* background-image:    -moz-linear-gradient(top, #bbb, #eee);
-  background-image:     -ms-linear-gradient(top, #bbb, #eee);
-  background-image:      -o-linear-gradient(top, #bbb, #eee); */
-  border-top: 1px solid #fff;
-  border-radius: 3px;
+  /* border-top: 1px solid #fff; */
+  border-radius: 15px;
   margin: 0 7px;
   padding: 18px 0;
   display: inline-block;
   position: relative;
 }
 
-#countdown #tiles > span:after{
+/* #countdown #tiles > span:after{
   width: 100%;
   height: 1px;
   background: #eee;
@@ -87,7 +39,7 @@ body{
   display: block;
   position: absolute;
   top: 48%; left: 0;
-}
+} */
 
 #countdown .labels{
   width: 100%;
@@ -98,7 +50,7 @@ body{
 }
 
 #countdown .labels li{
-  width: 102px;
+  width: 100px;
   font: bold 15px 'Droid Sans', Arial, sans-serif;
   color: white;
   text-align: center;
@@ -107,7 +59,7 @@ body{
 }
 
 img{
-    height: 300px;
+    height: 400px;
     width: auto;
 }
 
@@ -117,17 +69,18 @@ img{
 } 
 
 .section1{
-    height: 20vh;
+    font-family: 'Pacifico', cursive;
+    /* height: 20vh; */
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #FFDBE9;
 }
 
 .des{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 } 
 
 .names{
@@ -145,3 +98,36 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.red{
+    color: crimson;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 500;
+    color: coral;
+}
+
+@media only screen and (max-width: 590px) {
+    .names{
+        font-size: 30px;
+    }
+    .img{
+        height: 300px;
+        width: auto;
+    }
+    #countdown #tiles > span{
+        width: 50px;
+        height: 20px;
+        border-radius: 15px;
+    }
+    #countdown{
+        width: 300px;
+        height: 80px;
+    }
+    #countdown .labels li{
+        font-size: 10px;
+        width: 60px;
+    }
+  }
