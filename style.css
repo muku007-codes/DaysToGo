@@ -11,7 +11,6 @@ body{
   text-align: center;
   background: #FFB6C1;
   border-radius: 15px;
-  margin: auto;
   padding: 24px 0;
   position: relative;
 }
@@ -47,7 +46,7 @@ body{
 }
 
 img{
-    height: 400px;
+    height: 500px;
     width: auto;
 }
 
@@ -66,22 +65,30 @@ img{
 }
 
 .des{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 } 
 
 .names{
+    font-family: 'Pacifico', cursive;
     margin: 0;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .section2{
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #FFDBE9;
+    justify-content: center;
+    align-items: center;
+}
+
+.couple{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -94,14 +101,24 @@ img{
     font-size: 20px;
     font-weight: 500;
     color: coral;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    background-color:cornsilk;
+    font-family: 'Pacifico', cursive;
+    color:crimson;
+    text-align: center;
 }
 
 @media only screen and (max-width: 590px) {
     .names{
-        font-size: 30px;
+        font-size: 28px;
     }
-    .img{
-        height: 300px;
+    img{
+        height: 200px;
         width: auto;
     }
     #countdown #tiles > span{
