@@ -1,5 +1,4 @@
 const weddingDate = "23 Jun 2023";//target date
-// console.log(Date().getTime());//display
 var target_date = new Date(weddingDate);
 var days, hours, minutes, seconds; // variables for time units
 
