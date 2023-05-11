@@ -1,4 +1,6 @@
-var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+const weddingDate = "23 Jun 2023";//target date
+// console.log(Date().getTime());//display
+var target_date = new Date(weddingDate);
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
@@ -12,6 +14,7 @@ function getCountdown(){
   // find the amount of "seconds" between now and target
   var current_date = new Date().getTime();
   var seconds_left = (target_date - current_date) / 1000;
+  console.log(current_date/1000);
 
   days = pad( parseInt(seconds_left / 86400) );
   seconds_left = seconds_left % 86400;
